@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
 import ClickerGame from "./pages/ClickerGame.jsx";
@@ -18,6 +18,7 @@ function Layout() {
           <Route path="/" element={<Home />} />
           <Route path="/clicker" element={<ClickerGame />} />
           <Route path="/secret" element={<Secret />} />
+          {/* Redirect any unknown path back to Home */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
