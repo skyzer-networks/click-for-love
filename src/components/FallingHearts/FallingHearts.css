@@ -1,0 +1,27 @@
+.hearts-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  width: 100%;
+}
+
+.heart {
+  position: absolute;
+  top: -20%;
+  opacity: 0.85;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(var(--drift), 120vh);
+    opacity: 0;
+  }
+}

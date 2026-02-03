@@ -1,0 +1,59 @@
+.click-center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicker-points {
+    padding: 1vh 5vw;
+    background-color: rgba(0, 0, 0, 0.541);
+    border-radius: 50px;
+    box-shadow: 0 0 10px black;
+    font-size: 2em;
+    font-family: var(--font-norm);
+    font-weight: 100;
+    cursor: default;
+    margin-bottom: 2vh;
+}
+
+.click-stats {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: visible;
+}
+
+.click-per, .click-second {
+    color: rgb(255, 78, 78);
+    font-size: 1.5em;
+    cursor: default;
+}
+
+.click-btn {
+    background: transparent;
+    border: none;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+.click-image {
+    width: 30vw;
+    height: auto;
+    transition: transform 400ms ease;
+}
+
+.click-image:hover {
+    transform: scale(1.02);
+}
+
+.click-image:active {
+    transform: scale(.95);
+    transition: transform 100ms ease;
+}

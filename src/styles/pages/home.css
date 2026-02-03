@@ -1,0 +1,121 @@
+.title_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/images/texture/argyle.png");
+  overflow: hidden;
+}
+
+.menu_container {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100; /* above effects */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.menu_holder {
+    width: 30%;
+    height: 80%;
+    background-color: rgb(24, 24, 24);
+    box-shadow: 
+    0 0 50px black, 
+    0 0 200px rgba(255, 157, 190, 0.411),
+    inset 0 0 20px rgba(255, 176, 244, 0.397);
+    border-radius: 10px;
+    border: 5px ridge pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_title {
+    font-size: 4em;
+    font-family: var(--font-norm);
+    color: rgb(255, 115, 115);
+    text-shadow: -3px -3px 0 pink, 3px 3px 0 rgb(242, 192, 255);
+    margin-top: 5vh;
+    line-height: 8vh;
+}
+
+.menu_desc {
+    font-size: 1.8rem;
+    font-family: var(--font-title);
+    color: rgb(255, 255, 255);
+    margin-top: 2vh;
+    width: 80%;
+}
+
+.menu_button_holder {
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu_button {
+    width: 80%;
+    padding: 15px 10px;
+    font-size: 1.3rem;
+    margin: 1.5vh 0;
+    font-family: var(--font-norm);
+    color: rgb(255, 117, 135);
+    background-color: rgb(14, 14, 14);
+    border: none;
+    transition: all 300ms ease;
+}
+
+.menu_button:hover {
+    background-color: rgb(43, 43, 43);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 0 rgb(255, 255, 255),5px 5px 0 rgb(255, 117, 135);
+    color: rgb(255, 175, 193);
+    cursor: pointer;
+}
+
+.secret-button {
+    background-color: rgb(28, 0, 0);
+    border: 2px solid gold;
+    width: 80%;
+    margin-top: 3vh;
+    color: gold;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: var(--font-norm);
+    transition: transform 0.3s ease;
+
+    /* Animation */
+    animation: pulseGlow 1s infinite alternate;
+}
+
+/* Glow + pulse keyframes */
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px rgba(255,215,0,0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px gold, 0 0 30px gold, 0 0 40px rgba(255,215,0,0.7);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px rgba(255,215,0,0.5);
+    }
+}
+
+/* Optional hover boost */
+.secret-button:hover {
+    transform: scale(1.1);
+}
