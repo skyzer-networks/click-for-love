@@ -7,6 +7,6 @@ export default defineConfig({
   server: {
     host: true,
     https: true,
-    base: '/clicker-game/',
+    base: '/click-for-love/',
   },
 })

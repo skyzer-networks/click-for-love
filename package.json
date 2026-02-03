@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://skyzer-networks.github.io/clicker-game",
+  "homepage": "https://skyzer-networks.github.io/click-for-love",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
